@@ -1,0 +1,16 @@
+<!-- home.html -->
+{% extends "btc_api/base.html" %}
+
+{% block content %}
+<div class="row">
+  <div class="col" id="pricediv">
+    <h1>{{ price }}</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col" id="api_discl">
+    Powered by <a href="https://www.coindesk.com/price/bitcoin">CoinDesk</a>
+  </div>
+</div>
+{% endblock content %}

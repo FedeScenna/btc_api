@@ -1,0 +1,32 @@
+<!-- base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'btc_api/mystyle.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      />
+
+    <title>What is the bitcoin price?</title>
+  </head>
+  <body>
+    <h1 class="text-center text-dark">    1 BTC equals
+    </h1>
+    
+    <div class = "row">
+      <div class = "col">
+        <img src="{% static 'btc_api/bitcoin-logo.png' %}" class = ".img-responsive" id ="logo" style="width:50%" alt="My image">
+      </div>
+    </div>
+    <div class="container">
+      {% block content %} {% endblock content %}
+    </div>
+  </body>
+</html>
